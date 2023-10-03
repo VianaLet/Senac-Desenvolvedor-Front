@@ -35,14 +35,14 @@ nav ul{
     display: flex;
     justify-content: space-around;
     list-style-type: none;
-    padding: 1px;
+    padding: 3px;
     
 }
 nav a{
     color: white;
     font-weight: bold;
     text-decoration: none;
-    padding: 2px;
+    padding: 3px;
 }
 nav a:hover{
     color: var(--cor4);
