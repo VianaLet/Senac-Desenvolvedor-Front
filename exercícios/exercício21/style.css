@@ -16,7 +16,7 @@ body{
 }
 header{
     background-image: linear-gradient(to bottom, var(--cor0), var(--cor1));
-    min-width: 390px;
+    min-width: 400px;
 }
 header h1{
     color: white;
@@ -26,7 +26,7 @@ header h1{
 }
 nav{
     background-color: var(--cor1);
-    min-width: 390px;
+    min-width: 400px;
 }
 nav ul{
     
@@ -127,7 +127,7 @@ footer{
     color: white;
     text-align: left;
     padding: 3px;
-    min-width: 390px;
+    min-width: 400px;
 
 }
 footer>p,h2{
