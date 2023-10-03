@@ -45,6 +45,7 @@ nav a:hover{
     background-color: var(--cor2);
     transition: 0.5s;
     border-radius: 5px;
+    min-width: 550px;
 }
 main{
     background-color: var(--cor0);
@@ -122,6 +123,8 @@ footer{
     color: white;
     text-align: left;
     padding: 3px;
+    min-width: 550px;
+
 }
 footer>p,h2{
     margin-left: 5%;
