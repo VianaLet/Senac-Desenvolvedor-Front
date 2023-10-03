@@ -16,6 +16,7 @@ body{
 }
 header{
     background-image: linear-gradient(to bottom, var(--cor0), var(--cor1));
+    min-width: 510px;
 }
 header h1{
     color: white;
@@ -25,35 +26,36 @@ header h1{
 }
 nav{
     background-color: var(--cor1);
+    min-width: 510px;
 }
 nav ul{
     
     display: flex;
     justify-content: center;
     list-style-type: none;
-    padding: 10px;
+    padding: 1px;
     
 }
 nav a{
     color: white;
     font-weight: bold;
     text-decoration: none;
-    padding: 10px;
+    padding: 4px;
 }
 nav a:hover{
     color: var(--cor4);
     background-color: var(--cor2);
     transition: 0.5s;
     border-radius: 5px;
-    min-width: 550px;
+    
 }
 main{
     background-color: var(--cor0);
     max-width: 850px;
-    min-width: 550px;
+    min-width: 400px;
     margin: auto;
-    padding: 5px;
-    margin-bottom: 13px;
+    padding: 4px;
+    margin-bottom: 10px;
     border-radius: 0 0 20px 20px;
 }
 main h1,h2{
@@ -65,9 +67,8 @@ article > p{
     color: white;
     text-align: justify;
     font-family: 'Times New Roman', Times, serif;
-    text-indent: 30px;
     line-height: 1.4em;
-    margin: 10px;
+    margin: 5px;
 }
 main a{
     color: var(--cor4);
@@ -111,19 +112,22 @@ img{
     border: 1px solid black;
     border-radius: 10px;
     margin: 5px;
-    padding: 15px;
+    padding: 5px;
     background-color: var(--cor1);
 }
 .caixinhas h3{
     color: var(--cor4);
-    padding: 5px;
+    padding: 0px;
+}
+.caixinhas p{
+    font-size: 0.8em;
 }
 footer{
     background-color: var(--cor1);
     color: white;
     text-align: left;
     padding: 3px;
-    min-width: 550px;
+    min-width: 500px;
 
 }
 footer>p,h2{
