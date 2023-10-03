@@ -27,6 +27,8 @@ header h1{
 nav{
     background-color: var(--cor1);
     min-width: 410px;
+    max-width: 860px;
+    margin: auto;
 }
 nav ul{
     
