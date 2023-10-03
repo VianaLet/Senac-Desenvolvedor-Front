@@ -12,7 +12,7 @@
     margin: 0px;/* Estou definindo uma regra global para zerar as margins e paddings de todos os elementos */   
 }
 body{
-    background-color: black;
+    background-color: white;
 }
 header{
     background-image: linear-gradient(to bottom, var(--cor0), var(--cor1));
@@ -54,7 +54,7 @@ nav a:hover{
     
 }
 main{
-    background-color: var(--cor0);
+    background-color: black;
     max-width: 850px;
     min-width: 400px;
     margin: auto;
