@@ -3,7 +3,7 @@
     --cor0: #757d83;
     --cor1: #203444;
     --cor2: #592C99;
-    --cor3: #dcd5e9;
+    --cor3: #bab0cc;
     --cor4: #FFCC33;
     
 }
@@ -12,7 +12,7 @@
     margin: 0px;/* Estou definindo uma regra global para zerar as margins e paddings de todos os elementos */   
 }
 body{
-    background-color: white;
+    background-color:var(--cor3);
 }
 header{
     background-image: linear-gradient(to bottom, var(--cor0), var(--cor1));
