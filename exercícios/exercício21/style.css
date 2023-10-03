@@ -29,20 +29,22 @@ nav{
     min-width: 410px;
     max-width: 860px;
     margin: auto;
+    height: 25px;
 }
 nav ul{
     
     display: flex;
     justify-content: space-around;
     list-style-type: none;
-    padding: 3px;
+    padding: 0px;
     
 }
+
 nav a{
     color: white;
     font-weight: bold;
     text-decoration: none;
-    padding: 3px;
+    padding: 5px;
 }
 nav a:hover{
     color: var(--cor4);
