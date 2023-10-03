@@ -101,10 +101,17 @@ img{
     display: flex;
     justify-content: space-around;
     color: white;
-    font-weight: bold;
     text-align: center;
     list-style-type: none;
     padding: 10px;
+    
+}
+.caixinhas li{
+    border: 1px solid black;
+    border-radius: 10px;
+    margin: 5px;
+    padding: 15px;
+    background-color: var(--cor1);
 }
 .caixinhas h3{
     color: var(--cor4);
