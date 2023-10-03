@@ -1,0 +1,126 @@
+@charset "UTF-8";
+:root{ /* Criando variáveis no CSS */
+    --cor0: #757d83;
+    --cor1: #203444;
+    --cor2: #592C99;
+    --cor3: #dcd5e9;
+    --cor4: #FFCC33;
+    
+}
+*{
+    padding: 0px; 
+    margin: 0px;/* Estou definindo uma regra global para zerar as margins e paddings de todos os elementos */   
+}
+body{
+    background-color: black;
+}
+header{
+    background-image: linear-gradient(to bottom, var(--cor0), var(--cor1));
+}
+header h1{
+    color: white;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    padding: 10px;
+}
+nav{
+    background-color: var(--cor1);
+}
+nav ul{
+    
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    padding: 10px;
+    
+}
+nav a{
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 10px;
+}
+nav a:hover{
+    color: var(--cor4);
+    background-color: var(--cor2);
+    transition: 0.5s;
+    border-radius: 5px;
+}
+main{
+    background-color: var(--cor0);
+    max-width: 850px;
+    min-width: 350px;
+    margin: auto;
+    padding: 5px;
+    margin-bottom: 13px;
+    border-radius: 0 0 20px 20px;
+}
+main h1,h2{
+    color: white;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+}
+article > p{
+    color: white;
+    text-align: justify;
+    font-family: 'Times New Roman', Times, serif;
+    text-indent: 30px;
+    line-height: 1.4em;
+    margin: 10px;
+}
+main a{
+    color: var(--cor4);
+    font-weight: bold;
+    font-size: 1.5em;
+    background-color: var(--cor2);
+    margin: 10px;
+    padding: 10px;
+    border-radius: 4px;
+    text-decoration: none;
+    text-align: center;
+    display: block;
+}
+main a:hover{
+    color: var(--cor4);
+    font-weight: bold;
+    font-size: 1.6em;
+    text-decoration: underline;
+    background-color: var(--cor2);
+    margin: 10px;
+    padding: 10px;
+    border-radius: 4px;
+    text-align: center;
+    display: block;
+}
+img{
+    padding: 10px;
+    width: 100%;
+    margin: -9px;
+}
+.caixinhas{
+    display: flex;
+    justify-content: space-around;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    list-style-type: none;
+    padding: 10px;
+}
+.caixinhas h3{
+    color: var(--cor4);
+    padding: 10px;
+}
+footer{
+    background-color: var(--cor1);
+    color: white;
+    text-align: left;
+    padding: 3px;
+}
+footer>p,h2{
+    margin-left: 5%;
+    padding-bottom: 10px;
+}
+footer  a{
+    color: white;
+    font-weight: bold;
+}
