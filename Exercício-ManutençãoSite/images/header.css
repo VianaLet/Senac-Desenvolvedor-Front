@@ -1,0 +1,306 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container_logo_search {
+  height: 282px;
+  width: 100%;
+  background-color: rgb(0, 0, 0);
+  top: 12px;
+  position: relative; /* Adiciona posição relativa para que os elementos internos possam ser posicionados de forma absoluta */
+}
+
+#logo {
+  width: 466px;
+  height: 269px;
+  margin-left: 26px;
+  margin-top: 5.6px;
+}
+
+.searchInput {
+  position: absolute; /* Adiciona posição absoluta para posicionar o input e a lupa dentro do container */
+  top: 10px;
+  right: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.searchInput input[type="text"] {
+  padding: 6px;
+  border: none;
+  font-size: 17px;
+  border-radius: 5px;
+}
+
+#lupaIcone {
+  width: 52px;
+  height: 37px;
+  margin-right: 8px; /* Espaçamento entre o ícone da lupa e o campo de entrada */
+}
+
+.container_header1 {
+  display: flex;
+  justify-content: space-between;
+}
+
+.container_local_data {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  width: 373px;
+  height: 19px;
+  margin-left: 72px;
+  margin-top: 11px;
+}
+
+#localizacao_icone, #relogio_icone {
+  height: 14px;
+  width: 14px;
+}
+
+#localData, #localIcone {
+  gap: 6px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#p_local, #p_data {
+  font-family: open sans-serif;
+  font-weight: 400 ;
+  font-size: 14px;
+  line-height: 19.07px;
+}
+
+.container_email_telefone {
+  display: flex;
+  gap: 30px;
+  width: 373px;
+  height: 19px;
+  margin-left: 72px;
+  margin-top: 11px;
+}
+
+#localEmail, #localTelefone {
+  display: flex;
+  font-family: open sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 19.07px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+
+#email_icone, #telefone_icone {
+  height: 10px;
+  width: 10px;
+}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 100%;
+  height: 450px;
+  position: relative;
+  margin: auto;
+  overflow: hidden;
+}
+
+/* Hide the images by default */
+.mySlides{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: rgb(187, 158, 73);
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0, 0, 0, 0.6);
+  
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 40px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+.dot_container {
+  position: absolute;
+  bottom: 12px; /* Ajuste a posição vertical conforme necessário */
+  left: 50%; /* Centralize horizontalmente */
+  transform: translateX(-50%); /* Centralize horizontalmente */
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 5px;
+  background-color: #C3B385;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #bb9e49;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+
+/* The side navigation menu */
+.sidenav {
+  height: 100%; /* 100% Full-height */
+  width: 0; /* Inicia com largura 0 - navbar escondido */
+  position: fixed; /* Fixa o navbar */
+  z-index: 1;
+  top: 0;
+  right: 0; /* Posiciona o navbar na parte direita */
+  background-color: #161616; /* Cor de fundo do navbar */
+  overflow-x: hidden;
+  padding-top: 60px;
+  transition: .5s;
+}
+
+.container_header {
+  transition: .5s;
+}
+
+/* The navigation menu links */
+#main {
+  position: absolute;
+  top: 20px; /* Ajuste a posição vertical conforme necessário */
+  right: 10px;
+  transform: translateX(-50%);
+  z-index: 9999; /* Coloca o ícone na parte superior */
+  padding: 20px;
+}
+
+#main img {
+  width: 40px;
+  height: 40px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-family: 'Poppins', sans-serif;
+  font-size: 20px;
+  color: #bb9e49;
+  display: block;
+  transition: 0.3s;
+  width: 250px; /* Largura do navbar quando estiver aberto */
+  right: 0; /* Mantém o navbar na parte direita */
+  transform: translateX(0); /* Move o navbar da direita para a esquerda */
+}
+
+.sidenav .a_sidenav {
+  text-align: center;
+  
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+  color: #C3B385;
+}
+
+/* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  left: 120px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+
+@media screen and (max-width: 600px) {
+  .searchInput {
+    position: relative; /* Retorna à posição relativa para o layout responsivo */
+    width: 100%;
+  }
+
+  .searchInput a,
+  .searchInput input[type="text"] {
+    width: 100%;
+    margin: 0;
+    padding: 14px;
+  }
+
+  .searchInput input[type="text"] {
+    border: 1px solid #ccc;
+  }
+}
+
+.searchInput a.active {
+  background-color: #2196f3;
+  color: white;
+}
+
+
+
+
+
+
