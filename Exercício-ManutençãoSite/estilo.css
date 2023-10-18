@@ -1,4 +1,5 @@
 @charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto+Condensed:ital,wght@0,400;0,700;1,300;1,400&display=swap');
 /*
  * CSS do site "André Lanches"
  */
@@ -49,7 +50,7 @@ body.sobrenos{
 /** Seleciona um elemento HTML com id definido para "header".
 Em nossa página, vai selecionar a div de cabeçalho **/
 #header {
-
+    background-image: linear-gradient(to bottom, #585857, rgb(12, 12, 12), #000000);
     /** Define a largura da div para que ocupe todo o espaço
     disponível do pai. No nosso caso, o pai é o corpo da página.
     Portanto, a div de cabeçalho ficará com a mesma largura
@@ -65,6 +66,7 @@ Em nossa página, vai selecionar a div de cabeçalho **/
     do elemento). Nesse caso, estamos definindo um espaço de 
     margem interna de 10px na parte superior da div **/
     padding-top: 10px;
+    box-shadow: -6px 9px 11px 4px rgba(0, 0, 0, 0.486);
 }
 
 /** Seleciona a div que armazenará os elementos de logo (imagem
@@ -72,11 +74,11 @@ e texto do logo do site) **/
 #logo {
     /** Definimos uma largura capaz de armazenar a imagem e o texto
     do logo do site. Neste caso, 425px **/
-    width: 425px;
+    width: 800px;
 
     /** Definimos uma altura capaz de armazenar a imagem e o texto
     do logo do site. Neste caso, 100px **/    
-    height: 100px;
+    height: 150px;
 
     /** Desejamos posicionar esse elemento na página, utilizando
     elementos de posicionamento como left e top. Para que os mesmos
@@ -103,6 +105,7 @@ e texto do logo do site) **/
     margins internas dos elementos. Esta técnica pode ser
     utilizada sempre que for necessário posicionar elementos no meio
     da página **/
+    margin: auto;
 }
 
 /** Seleciona o elemento com o id "logoImg". No nosso caso, a imagem
@@ -110,10 +113,10 @@ que representa o logo do site**/
 #logoImg {
 
     /** Configura o tamanho do logo **/
-    width: 60px;
-    height: 60px;
+    width: 140px;
+    height: 140px;
     position: relative;
-    top: 7px;
+    top: -9px;
     /** O comando float faz com que elementos que normalmente
     quebrariam linhas "flutuem" a esquerda ou a direita, nos
     cantos do elemento pai onde se encontram. É possível flutuar
@@ -121,20 +124,19 @@ que representa o logo do site**/
     outro. Estamos aplicando a fluação na imagem e no texto do
     logo, de forma que fiquem um ao lado do outro **/
     float: left;
+    padding-left: 15px;
+    padding-right: 20px;
 }
 
 #tituloLogo {
-    
     /** O comando float faz com que elementos que normalmente
     quebrariam linhas "flutuem" a esquerda ou a direita, nos
     cantos do elemento pai onde se encontram. É possível flutuar
     mais de um elemento, de forma que estes fiquem um ao lado do
     outro. Estamos aplicando a fluação  no texto de forma que o
     mesmo fique ao lado da imagem **/
-    float: left;
-
     /** Muda a cor do texto do logo **/
-    color: #e50021;
+    color: #F5B139;
 
     /** Por padrão, usamos o elemento vertical-align: middle
     para deixar elementos centralizados verticalmente. No entanto
@@ -143,18 +145,24 @@ que representa o logo do site**/
     propriedade line-height é utilizada para tanto. Neste caso, estamos
     configurando a linha para ter o mesmo tamanho da imagem, fazendo
     com que o texto fique posicionado no meio desta **/
-    line-height: 100px;
-
+    line-height: 27px;
     /** Alguns elementos no HTML vem com margem embutida pelo
     navegador, headers, por exemplo, já possuem valores de margem
     pré-estabelecidos. Usando a definição abaixo,
     estamos removendo a margem de todos os lados do h1 de título,
     fazendo com que o h1 fique posicionado corretamente, sem espaços
     desnecessários **/
-    margin: 0;
-
+    margin: 5px;
+    padding: 18px;
+    padding-left: 10px;
     /** Define o tamanho da fonte para 50px **/
-    font-size: 50px;
+    font-size: 72px;
+    font-family: 'Bebas Neue', sans-serif;
+    text-shadow: 8px 4px 4px rgba(0, 0, 0, 0.363);
+}
+div#logo h2{
+    display: inline;
+    color: #F5B139;
 }
 
 /** Seleciona a div principal que irá compor o menu da aplicação
@@ -186,12 +194,13 @@ que representa o logo do site**/
     reservado para os elementos do menu. Se usássemos o absolute,
     perderiamos o espaço e o elemento pai iria desaparecer, perdendo
     a cor de fundo que atravessa a página horizontalmente  **/
-    position: relative;
+    
 
     /** Novamente, vamos centralizar o elemento horizontalmente.
     Para tanto, podemos definir seu posicionamento partindo da
     esquerda para a metade do tamano do pai (50%) **/
-    left: 50%;
+    display: inline;
+    margin: auto;
 
     /** Novamente, vamos corrigir o posicionamento não considerar o meio
     do elemento, e sim o início (left) como cálculo de posicionamento
@@ -200,12 +209,11 @@ que representa o logo do site**/
     corretamente posicionado ao meio. Estamos utilizando um valor maior
     que a metade do tamanho para compensar a margem que separa  os
     elementos entre si **/
-    margin-left: -205px;
+    
 
     /** Definimos uma margem superior ao elemento, de forma que o
     mesmo fique mais afastado do topo e, ao mesmo tempo,
     centralizado **/
-    margin-top: 7px;
 }
 
 /** Seleciona todos os elementos de lista do item com a classe
@@ -270,10 +278,13 @@ já visitados **/
 .listaMenu li a:hover {
 
     /** Muda a cor do link **/
-    color: #e50021;
+    color: #f7ad2e;
 
     /** Muda a cor de fundo para branco **/
     background-color: white;
+    transition: 0.5s;
+    padding: 7px;
+    border-radius: 5px;
 }
 
 /** Seleciona os elementos com o id "menuAtual" quando em estado
@@ -295,29 +306,34 @@ main#content {
     max-width: 880px;
     margin: auto;
     /** Definimos a cor branca para a div principal **/
-    background-color: rgba(255, 255, 255, 0.61);
+    background-color: rgba(255, 255, 255, 0.658);
     padding: 0px;
 }
 main.sobrenos{
-    background-color: rgba(255, 255, 255, 0.459);
+    background-color: rgba(255, 255, 255, 0.719);
 }
 ul.cardapio{
     display: flex;
     flex-wrap: wrap;
     list-style-type: none;
-    border: 1px solid black;
     width: 95%;
 }
 ul.cardapio >li{
     margin: 5px;
-    min-width: 300px;
-    max-width: 400px;
+    min-width: 310px;
+    max-width: 405px;
     border-radius: 10px;
     background-color: #484946de;
 }
+ul.cardapio>li:hover{
+    color: black;
+    background-color: white;
+    transition: 0.5s;
+    box-shadow: 3px 4px 3px rgba(0, 0, 0, 0.568);
+}
 ul.cardapio img{
     float: left;
-    margin: 4px;
+    margin: 5px;
     margin-top: 18px;
     margin-right: 15px;  
     height: 180px;
@@ -335,10 +351,59 @@ ul.cardapio h2{
     color: #F5B139;
 }
 ul.cardapio h2:hover{
-    color: white;
+    color: #e6a535;
+    font-size: 26px;
 
 }
 ul.cardapio p{
+    font-size: 14px;
+    text-align: justify;
+}
+ul.cardapio2{
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+    width: 95%;
+}
+ul.cardapio2 >li{
+    margin: 5px;
+    min-width: 310px;
+    max-width: 405px;
+    border-radius: 10px;
+    background-color: #ffffffb4;
+    margin-bottom: 15px;
+}
+ul.cardapio2>li:hover{
+    color: black;
+    background-color: white;
+    transition: 0.5s;
+    box-shadow: 3px 4px 3px rgba(0, 0, 0, 0.568);
+}
+ul.cardapio2 img{
+    float: left;
+    margin: 5px;
+    margin-top: 18px;
+    margin-right: 15px;  
+    height: 180px;
+    width: 180px;
+    border-radius: 20% 20%;
+    padding-inline-start: 0px;
+}
+ul.cardapio2 h2, p{
+    padding: 4px;
+    text-align: center;
+    margin: 0;
+}
+ul.cardapio2 h2{
+    font-size: 24px;
+    color: #F5B139;
+}
+ul.cardapio2 h2:hover{
+    color: #e6a535;
+    font-size: 26px;
+
+}
+ul.cardapio2 p{
     font-size: 14px;
     text-align: justify;
 }
@@ -422,6 +487,9 @@ h1#tituloConteudo,h2.grupohamburguer  {
     /** Reduz a margem inferior padrão do H **/
     margin-bottom: 10px;
 }
+h2.grupohamburguer{
+    text-decoration: underline;
+}
 
 /** Seleciona os elementos de tabela dentro da div com id
 "areaProdutos" **/
@@ -501,7 +569,7 @@ h1#tituloConteudo,h2.grupohamburguer  {
     bottom: 30px;
 
     /** Posiciona o elemento 10px em relação a margem direita **/
-    right: 10px;
+    right: -70px;
 
     /** Define um tamanho para o elemento **/
     height: 100px;
@@ -513,9 +581,10 @@ h1#tituloConteudo,h2.grupohamburguer  {
 
     /** Transforma o elemento num círculo **/
     border-radius: 50%;
-
+    height: 120px;
+    width: 120px;
     /** Define uma borda para o elemento **/
-    border: 3px solid #e50021;
+    
 }
 
 /** Seleciona elementos com id "tel" **/
@@ -533,7 +602,6 @@ h1#tituloConteudo,h2.grupohamburguer  {
     width: 210px;
 
     /** Define a cor de fundo do item **/
-    background-color: #e50021;
 
     /** Define a cor do texto para branco **/    
     color: white;
@@ -602,7 +670,8 @@ main{
     padding: 1% 25% 15% 0;
 }
 h1, h2 {
-    color: #e50021;
+    color: #000000;
+    
 }
 p>a{
     color: black;
@@ -619,7 +688,7 @@ p>a:hover{
 }
 .contatolink{
     text-decoration: none;
-    color: #e50021;
+    color: black;
     font-weight: bold;
 }
 .imgcontato{
