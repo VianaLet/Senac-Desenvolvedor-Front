@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <header>
+
+    </header>
+    <main>
+        <h1>Cadastro de Usuário</h1>
+        <form action="cadastrosuceesso.html">
+            <label for="nome">Nome: </label><input type="text">
+            <br><br>
+            <label for="email">Email: </label><input type="email">
+            <br><br>
+            <label for="idade">Idade: </label><input type="number">
+            <br><br>
+            <label for="genero">Gênero: </label>
+            <input type="radio" name="genero" value="Masculino"><label for="Masculino">Masculino</label>
+            <input type="radio" name="genero" value="Feminino"><label for="Feminino">Feminino</label>
+            <input type="radio" name="genero" value="Outros"><label for="Outros">Outros</label> <br><br>
+            <label for="mensagem">Mensagem: </label>
+            <textarea name="mensagem" id="" cols="45" rows="4"></textarea>
+            <br><br>
+            <label for="arquivo">Selecione um arquivo:</label> <br>
+            <input type="file"> <br><br>
+            <button type="submit" onclick="alert('Cadastro realizado com sucesso')">Enviar</button>
+            <button type="reset">Limpar</button>
+        </form>
+    </main>
+</body>
+</html>

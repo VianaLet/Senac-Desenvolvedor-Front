@@ -1,0 +1,8 @@
+form{
+    border: 1px solid black;
+    caret-color: red;
+}
+input,textarea{
+    background-color: black;
+    color: white;
+}

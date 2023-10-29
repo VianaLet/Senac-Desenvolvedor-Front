@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <h1>ATIVIDADE DE FORMULÁRIO</h1>
+    <form action="">
+        <p>Formulário 01</p>
+        <label for="nome">Nome: </label>
+        <input type="text" name="nome">
+        <br>
+        <label for="sexo">Sexo: </label>
+        <input type="radio" name="sexo" value="fem"> <label for="fem">Feminino</label>
+        <input type="radio" name="sexo" value="masc"> <label for="masc">Masculino</label>
+        <br>
+        <label for="Escolaridade">Escolaridade: </label>
+        <select name="Escolaridade" id="">
+            <option value="EF">Ensino Fundamental</option>
+            <option value="EM">Ensino Médio</option>
+            <option value="S">Superior</option>
+        </select>
+        <h2>BOTÕES DE RÁDIO</h2>
+        <input type="radio" name="radio" value="direção"><label for="direção">Direção</label>
+        <br>
+        <input type="radio" name="radio" value="frisos"><label for="frisos">Frisos</label>
+        <br>
+        <input type="radio" name="radio" value="tapetes"><label for="tapetes">Tapetes</label>
+        <br>
+        <input type="radio" name="radio" value="rodas"><label for="rodas">Rodas de Liga-Leve</label><br><br>
+        <label for="area de texto">Área do texto</label><br>
+        <textarea placeholder="Digite seu comentário AQUI" name="area de texto" id="" cols="10" rows="5"></textarea>
+        <br><br>
+        <label for="caixaseleção">Caixa de Seleção- Lista</label> <br>
+
+        <select name="caixaseleção" id="" multiple >
+            <option value="DF">DF</option>
+            <option value="SP">SP</option>
+            <option value="GO">GO</option>
+        </select> 
+        <br><br>
+        <button type="submit">enviar</button>
+        <br><br>
+        <button type="reset">limpar</button>
+    </form>
+</body>
+</html>
