@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>header do site</title>
+  <link rel="stylesheet" href="header.css">
+</head>
+
+<body>
+
+  <div class="container_header">
+    <div class="container_header1">
+
+      <div class="container_local_data">
+
+        <div id="localIcone">
+          <img src="./image/Vector.png" alt="localização icone" id="localizacao_icone">
+          <p id="p_local">Brasília - DF</p>
+        </div>
+
+        <div id="localData">
+          <img src="./image/Vector2.png" alt="relogio icone" id="relogio_icone">
+          <p id="p_data">Horário: 09:00 - 21:00</p>
+        </div>
+
+      </div>
+
+      <div class="container_email_telefone">
+
+        <div id="localEmail">
+          <img src="./image/mail.png" alt="email icone" id="email_icone">
+          <p id="p_mail">weiv@example.com</p>
+        </div>
+
+        <div id="localTelefone">
+          <img src="./image/telefone.png" alt="telefone icone" id="telefone_icone">
+          <p id="p_telefone">(61) 3345-6789</p>
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="container_logo_search">
+      <div class="searchInput">
+        <img src="./image/basil_search-solid.png" alt="icone de lupa" id="lupaIcone">
+        <input type="text" placeholder="Search..">
+      </div>
+      <img src="./image/weivlogo1 1.png" alt="imagem da logo weivlogo" id="logo">
+    </div>
+
+    <!-- Slideshow container -->
+    <div class="slideshow-container" style="top: 12px;">
+
+      <div id="main">
+        <span style="cursor:pointer" onclick="openNav()"><img src="./image/carrossel1/nav_menu_icone.png" alt=""></span>
+      </div>
+
+      <!-- Full-width images with number and caption text -->
+      <div class="mySlides fade">
+        <div class="numbertext">1 / 3</div>
+        <img src="./image/carrossel1/imagem1.png" style="width:100%; height: 450px;">
+        <div class="text">Caption Text</div>
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext">2 / 3</div>
+        <img src="./image/carrossel1/imagem2.png" style="width:100%; height: 450px;">
+        <div class="text">Caption Two</div>
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext">3 / 3</div>
+        <img src="./image/carrossel1/imagem3.png" style="width:100%; height: 450px;">
+        <div class="text">Caption Three</div>
+      </div>
+
+      <!-- Next and previous buttons -->
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+      <!-- The dots/circles -->
+      <div style="text-align:center" class="dot_container">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+      </div>
+    </div>
+    
+    <div id="mySidenav" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <a href="#" class="a_sidenav">Home</a>
+      <a href="#" class="a_sidenav">Sobre Nós</a>
+      <a href="#" class="a_sidenav">Serviços</a>
+      <a href="#" class="a_sidenav">Projetos</a>
+      <a href="#" class="a_sidenav">Equipe</a>
+      <a href="#" class="a_sidenav">Contato</a>
+    </div>
+  </div>
+  <script src="header.js" defer></script>
+
+</body>
+
+</html>

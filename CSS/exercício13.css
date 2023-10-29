@@ -1,0 +1,30 @@
+@charset "UTF-8";
+body{
+    background-image: linear-gradient(to right,#657e8b,#124A68 );
+}
+h1{
+    color: white;
+    font-size: 20pt;
+}
+h2{
+    text-align: center;
+}
+hr{
+    border: 1px solid red;
+}
+p{
+    color: white;
+    font-size: 11pt;
+    margin-left: 15px;
+    text-align: justify;
+}
+a:link{
+    color: red;
+    text-decoration: none;
+    font-weight: bold;
+}
+a:hover{
+    color: blue;
+    font-weight: bold;
+    text-decoration: underline;
+}

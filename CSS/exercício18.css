@@ -1,0 +1,17 @@
+@charset "UTF-8";
+
+#cabecalho {
+    width: 200px;
+    float: left;
+    color: blue;
+}
+
+#conteudo {
+    margin-left: 205px;
+    color: brown;
+}
+
+#rodape {
+    clear: both;
+    color: blueviolet;
+}

@@ -1,0 +1,19 @@
+
+.exercicio20 {
+    background-color: black;
+    }
+.exercicio20 h1{
+text-align: center;
+color: white;
+font-family: Arial, Helvetica, sans-serif;
+}
+.exercicio20 h2{
+    text-align: center;
+    color: blue;
+    font-family: 'Times New Roman', Times, serif;
+}
+.exercicio20 p{
+text-align: justify;
+color: yellow ;
+font-family: 'Times New Roman', Times, serif;
+}

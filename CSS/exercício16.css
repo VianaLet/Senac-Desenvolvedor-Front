@@ -1,0 +1,9 @@
+.lista-horizontal {
+    list-style-type: none; 
+    padding: 0; 
+    display: flex; 
+}
+
+.lista-horizontal li {
+    margin-right: 10px;
+}

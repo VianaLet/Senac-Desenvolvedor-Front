@@ -1,0 +1,35 @@
+@charset "ITF-8";
+body{
+    background-color: tan;
+}
+h1{
+    color: maroon;
+    font-size: 20pt;
+}
+hr{
+    color: navy;
+}
+p{
+    font-size: 11pt;
+    margin-left: 15px;
+}
+a{
+    color: green;
+}
+a:link{
+    color:green;
+    text-decoration: none;
+    font-weight: bold;   
+}
+a:checked{
+    color: darkgreen;
+    text-decoration: none;
+    font-weight: bold
+}
+a:hover{
+    color: yellow;
+    text-decoration: underline;
+}
+a:active{
+    color: blue;
+}
