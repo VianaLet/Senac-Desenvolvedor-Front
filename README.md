@@ -1,3 +1,4 @@
 # Senac-Desenvolvedor-Front
- Exercícios do curso de Desenvolvedor front-end do SENAC
+
+ Neste repositório estou constantemente atualizando com novos projetos, exercícios e aprendizados na área de Front-end, mais especificamente por conta do curso profissionalizante do Senac.
 <a href="https://vianalet.github.io/Senac-Desenvolvedor-Front/index.html">
